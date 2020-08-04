@@ -20,3 +20,6 @@ class Stack:
     def size(self):
         return len(self.items)
 
+    def remove(self):  # 移除栈顶数据
+        del self.items[len(self.items)-1]
+
