@@ -13,3 +13,9 @@ class Queue:
 
     def size(self):
         return len(self.items)
+
+    def peekfront(self):
+        return self.items[len(self.items)-1]
+
+    def remove(self):
+        del self.items[len(self.items)-1]
