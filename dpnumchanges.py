@@ -29,6 +29,6 @@ if __name__ == '__main__':
     coinUsed = [0]*(amt+1)
     minCoins = [0]*(amt+1)
     print(dpnumchange([1, 5, 10, 21, 25], amt, minCoins, coinUsed))
-    printCoins(63, coinUsed)  # 疑问1：全局变量和局部变量重名的话可以被函数改变吗？
+    printCoins(63, coinUsed)  # 疑问1：全局变量和局部变量重名的话可以被函数改变吗？因为此处coinUsed是可变数据类型，所以不加global也可以被函数改变
     print(coinUsed)
 
